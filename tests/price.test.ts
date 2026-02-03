@@ -8,7 +8,7 @@ function calculatePrice(price: number, isMember: boolean) {
 
 describe('價格計算器', () => {
     test('會員應該獲得九折優惠', () => {
-        expect(calculatePrice(100, true)).toBe(88);
+        expect(calculatePrice(100, true)).toBe(90);
     })
 
     test('非會員應該維持原價', () => {
