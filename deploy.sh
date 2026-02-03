@@ -16,6 +16,6 @@ docker rm nuxt-prod
 
 # 4. 啟動新容器 (注意：這裡要用你設定的 8083 port)
 echo "🔥 啟動新容器..."
-docker run -d --name nuxt-prod -p 8083:3000 ghcr.io/boivomitin/nuxt-admin-app-template:latest
+docker run -d --name nuxt-prod -p 8083:3000 --label com.centurylinklabs.watchtower.enable=false ghcr.io/boivomitin/nuxt-admin-app-template:latest
 
 echo "✅ 正式環境部署完成！請檢查 http://localhost:8083"
